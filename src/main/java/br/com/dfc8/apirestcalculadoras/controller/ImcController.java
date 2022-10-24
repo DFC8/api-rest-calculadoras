@@ -24,6 +24,7 @@ public class ImcController {
 
     @GetMapping
     public ResponseEntity<List<Imc>> obterListaImc(){
+
         return ResponseEntity.ok().body(imcService.listarTodos());
     }
 }
